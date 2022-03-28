@@ -1,36 +1,45 @@
-body {background-color:black; font:arial; font color:white}
-h1{color:grey; font:verdana}
-div.maindiv
-{
-    background-color:white;
-    font-family:arial, Helvetica, sans-serif;
-    font color:black; 
-    width:300px; 
-    padding:20px;
-    padding-left:50px;
-    border-radius:25px;
-    margin:auto;
-    display: flex;
-  justify-content: center;
-}
-
-div.form
-{
-    
-    padding-left:50px;
-    margin:auto;
-    font-family:arial, Helvetica, sans-serif;
-}
-
-button
-{
-    background-color: #008CBA;
-    border:none;
-    border-radius: 5px;
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
     color: white;
-    text-align: center;
-    padding: 7px;
-    text-decoration: none;
-    display: inline-block;
+}
 
+h1 {
+    color: grey;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.maindiv {
+    background-color: white;
+    color: black;
+    width: 500px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.subdiv {
+    margin-left: 80px;
+}
+
+.center {
+    margin: auto;
+    width: 500px;
+    padding: 10px;
+}
+
+label {
+    width: 120px;
+    clear: left;
+    text-align: left;
+    padding-right: 10px;
+}
+
+input,
+label {
+    float: left;
+}
+
+.highlight {
+    background: yellow;
 }
