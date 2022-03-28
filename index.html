@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <title>Simple Interest Calculator</title>
-        <div class="maindiv">
-        
-        <h1>Simple Interest Calculator </h1>
+    <title>Web App – Simple Interest Calculator</title>
+</head>
 
-        <div class="form">
-        
-        Amount <input type="number"  id="principal" onchange="return positive_value()">  
-        
-        <br/><br/>
-        Interest Rate <input type="range" id="interest_rate" min="1" max="20" step="0.25" value="10.25" onchange="slider()">  
-        <span id="showrate">10.25</span>%
-        <br/><br/>
-        No. of Years <input type="number" min="1" max="10" step="1"  id="years">  
-        <br/><br/>
-        <button onclick="compute()">Compute Interest</button>
-        <span id="result"></span>
-        <br/><br/>
-        
+<body class="center">
+    <div class="maindiv">
+        <h1>Simple Interest Calculator</h1>
+        <div class="subdiv" class="container">
+            <form>
+                <label for="principal">Amount</label>
+                <input type="text" id="principal" onblur="principal_validation(this.value)"> <br/> <br/>
+
+                <label for="rate">Interest Rate</label>
+                <input type="range" id="rate" name="rate" min="1" max="20" step="0.25" onchange="range(this.value)">
+                <span id="spanRate"> 10.25%</span> <br/> <br/>
+
+                <label for="years">No. of Years</label>
+                <select name="years" id="years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select> <br/><br/>
+            </form>
+            <button onclick="compute()">Compute Interest</button><br>
+
+            <span id="result">  </span> <br>
+
+        </div>
         <footer>
-            &#169 Everyone Can Get Rich
+            © Everyone Can Get Rich
         </footer>
-    
-
-        </div>
-        
-        </div>
-    </body>
-</html>
+    </div>
+</body>
