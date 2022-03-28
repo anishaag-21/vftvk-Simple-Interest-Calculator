@@ -28,7 +28,7 @@ h1 {
      color: black;
      width: 500px;
     padding: 20px;
-    border-radius: 25px;
+    border-radius: 0px 0px 25px 25px;
     margin-left: 80px;
     
 }
